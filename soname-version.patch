@@ -1,0 +1,22 @@
+--- liquid-dsp-9658d811f9194229304fec2d117f49c59b49a616.orig/configure.ac	2018-05-22 12:50:07.000000000 -05001.2
++++ liquid-dsp-9658d811f9194229304fec2d117f49c59b49a616/configure.ac	2018-08-07 22:22:43.337429419 -0500
+@@ -242,7 +242,7 @@ darwin*)
+     REBIND=""
+     ;;
+ *)
+-    SH_LIB=libliquid.so
++    SH_LIB=libliquid.so.1.3
+     REBIND=ldconfig
+     ;;
+ esac
+--- liquid-dsp-9658d811f9194229304fec2d117f49c59b49a616.orig/makefile.in	2018-05-22 12:50:07.000000000 -0500
++++ liquid-dsp-9658d811f9194229304fec2d117f49c59b49a616/makefile.in	2018-08-07 22:23:25.831449375 -0500
+@@ -1174,7 +1174,7 @@ libliquid.dylib: $(objects)
+ 	$(CC) -dynamiclib -install_name $@ -o $@ $^ $(LDFLAGS) $(LIBS)
+ 
+ # linux, et al
+-libliquid.so: libliquid.a
++@SH_LIB@: libliquid.a
+ 	$(CC) $(CFLAGS) $(LDFLAGS) -shared -Xlinker -soname=$@ -o $@ -Wl,-whole-archive $^ -Wl,-no-whole-archive $(LIBS)
+ 
+ all: libliquid.a $(SHARED_LIB)

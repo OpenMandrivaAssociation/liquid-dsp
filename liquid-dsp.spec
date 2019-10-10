@@ -7,8 +7,8 @@
 %define devname	%mklibname -d liquid-dsp
 
 Name:           liquid-dsp
-Version:        1.3.1
-Release:        4.%{snapshotdate}git%{shortcommit}%{?dist}
+Version:	1.3.2
+Release:	1
 Summary:        Digital Signal Processing Library for Software-Defined Radios
 
 License:        MIT

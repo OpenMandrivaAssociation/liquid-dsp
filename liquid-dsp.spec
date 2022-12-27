@@ -7,7 +7,7 @@
 %define devname	%mklibname -d liquid-dsp
 
 Name:           liquid-dsp
-Version:	1.4.0
+Version:	1.5.0
 Release:	1
 Summary:        Digital Signal Processing Library for Software-Defined Radios
 

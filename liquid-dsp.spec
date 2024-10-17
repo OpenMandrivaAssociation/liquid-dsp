@@ -12,7 +12,7 @@ Release:	1
 Summary:        Digital Signal Processing Library for Software-Defined Radios
 
 License:        MIT
-URL:            http://liquidsdr.org/
+URL:            https://liquidsdr.org/
 Source0:        https://github.com/jgaeddert/%{name}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 # set soname ourselves as upstream doesn't
 Patch0:         soname-version.patch

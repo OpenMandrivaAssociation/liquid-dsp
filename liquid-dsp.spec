@@ -21,6 +21,11 @@ Patch1:         autotools.patch
 # fixes ppc64 altivec, other 64-bit problems. Patch by Dan Horák.
 # https://github.com/jgaeddert/liquid-dsp/pull/136
 Patch2:         ppc64.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  fftw-devel
 
 %description

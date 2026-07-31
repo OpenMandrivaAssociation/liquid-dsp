@@ -7,7 +7,7 @@
 %define devname	%mklibname -d liquid-dsp
 
 Name:           liquid-dsp
-Version:	1.6.0
+Version:	1.8.1
 Release:	1
 Summary:        Digital Signal Processing Library for Software-Defined Radios
 
@@ -46,7 +46,7 @@ Requires:       %{libname} = %{EVRD}
 Digital signal processing library for software-defined radios
 
 %prep
-%autosetup -p1 -n %{name}-%{commit}
+%autosetup -p1 -n liquid-dsp-9658d811f9194229304fec2d117f49c59b49a616
 chmod a+x configure
 
 %build
